@@ -58,7 +58,7 @@ body {
     color: #0e2431;
     font-weight: 500;
     font-size: 1.2rem;
-    padding: 0.7rem;
+    padding: 0rem;
 }
   
 .navbar .nav-container a:hover{
@@ -66,6 +66,7 @@ body {
     border-radius: 20%;
     border-width: 2px;
     color: white;
+    background-color: #00274C;
 }
   
 .nav-container {
@@ -291,9 +292,10 @@ img {
 }
 
 .google-cal {
-    padding-bottom: 55%;
+    padding-bottom: 50%;
     position: relative;
     margin: 50px;
+    margin-bottom: 75%;
 }
 
 .google-cal iframe {
@@ -375,11 +377,9 @@ dd {
     margin:0% 1%;
 }
 
-.fa-tiktok {
-    font-size: 24px;
-    position: relative;
-    bottom: 2px;
-}
+/* loading icon */
+
+
     
 @media (max-width:720px){
     .footer{
@@ -396,6 +396,76 @@ dd {
     }
 }
 /* end social media icon footer */
+
+/* always a sticky header: */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.sticky + body {
+    padding-top: 60px;
+}
+
+p {
+    margin: auto;
+    width: 75%;
+}
+
+/* begin collapsible menu: */
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .content > li{
+    padding: 10px;
+  }
+  li ~ p {
+    margin-left: 30px;
+  }
+  .results > li {
+    margin-left: 30px;
+    padding-top: 10px;
+  }
+  .upcoming {
+    display: block;
+  }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active2:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+/* end collapsible menu */
 
 @media (min-width:768px) {
     .nav-container .checkbox {
@@ -452,18 +522,5 @@ dd {
         margin-top: 50px;
         margin-left: 50px;
         margin-right: 50px;
-    }
-}
-
-
-@media (min-width:1024px) {
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 100;
-    }
-    .sticky + body {
-        padding-top: 60px;
     }
 }

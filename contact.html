@@ -19,7 +19,7 @@
         <a href = "#main" class="skip">Skip to Main Content</a>
         <nav class="navbar">
             <div class="container nav-container">
-                <input class="checkbox" type="checkbox" name="" id="" />
+                <input class="checkbox" type="checkbox" name="" id="" onchange='handleChange(this)'/>
                 <div class="hamburger-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
@@ -34,14 +34,16 @@
                     <li><a href="events.html">Events</a></li>
                     <li><a href="location.html">Location</a></li>
                     <li><a href="schedule.html">Schedule</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html" id="current">Contact Us</a></li>
                 </div>
             </div>
         </nav>
     </header>
     <main id="main">
-
+        <div class="google-form"> 
+            <div data-customgform="cluw14xj6003dwnmqiq9cgse8"></div>
+            <script async src="https://cdn.customgform.com/cgf.js"></script>
+        </div>
     </main>
     <footer>
         <div class="footer">
@@ -52,16 +54,21 @@
             
             <div class="row">
             <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="suggestions.html">Suggestions</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="donate.html">Donate</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" id="current">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="https://www.gofundme.com/f/send-the-judo-team-from-uofm-to-the-nationals?utm_campaign=p_cf+share-flow-1&utm_content=undefined&utm_medium=copy_link&utm_source=customer&utm_term=undefined" target="_blank">Donate</a></li>
             </ul>
             </div>
-            
             <div class="row">
-            INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+                Last modified: <span id="demo"></span>
+            </div>
+            <div class="row">
+                © 2024 Judo at Michigan. All rights reserved.
+            </div>
+            <div class="row">
+                Designed By: Chloe Jones
             </div>
             </div>
             <script src="https://kit.fontawesome.com/121eb38f19.js" crossorigin="anonymous"></script>

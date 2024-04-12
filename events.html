@@ -19,7 +19,7 @@
         <a href = "#main" class="skip">Skip to Main Content</a>
         <nav class="navbar">
             <div class="container nav-container">
-                <input class="checkbox" type="checkbox" name="" id="" />
+                <input class="checkbox" type="checkbox" name="" id="" onchange='handleChange(this)'/>
                 <div class="hamburger-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
@@ -34,14 +34,65 @@
                     <li><a href="events.html" id="current">Events</a></li>
                     <li><a href="location.html">Location</a></li>
                     <li><a href="schedule.html">Schedule</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </div>
             </div>
         </nav>
     </header>
     <main id="main">
-
+        <button type="button" class="collapsible" id="previous">Previous Events</button>
+        <div class="content">
+            <li><a href="" target="_blank">2022 Great Lakes Judo Championship</a> - November 5, 2023</li>
+            <p>Results:</p>
+            <div class="results">
+                <li>Bronze, </li>
+                <li>Silver, </li>
+                <li>Silver, </li>
+            </div>
+            <li><a href="" target="_blank">2023 Meijer Winter State Games of Michigan</a> - February 18, 2023</li>
+            <p>Results:</p>
+            <div class="results">
+                <li>Gold, Novice Light Heavy: Haazem Turaani</li>
+                <li>Silver, </li>
+            </div>
+            <li><a href="" target="_blank">2023 Great Lakes Judo Championship</a> - November 4, 2023</li>
+            <p>Results:</p>
+            <div class="results">
+                <li>David Johnson</li>
+                <li>Marwan Mikdadi</li>
+                <li>Heath Stidham</li>
+                <li>Andrew Saladino</li>
+                <li>Takamaro Kajino</li>
+                <li>Elizabeth Engel</li>
+            </div>
+            <li><a href="https://www.stategamesofmichigan.com/events/winter/judo2024" target="_blank">2024 Meijer Winter State Games of Michigan</a> - February 17, 2024</li>
+            <p>Results:</p>
+            <div class="results">
+                <li>Silver, Novice Feather: Abdulhadi Bin Sifran</li>
+                <li>Silver, Novice Light: Takamaro Kajino</li>
+                <li>Bronze, Novice Light: Joonhyuk Ko</li>
+                <li>Bronze, Novice Light Exhibition: Joonhyuk Ko</li>
+                <li>Gold, Novice Junior: Andrew Saladino</li>
+                <li>Silver, Novice Middle: Heath Stidham</li>
+                <li>Gold, Novice Light Heavy: Haazem Turaani</li>
+                <li>Gold, Novice Heavy: Jose Garriga</li>
+                <li>Silver, Brown Light: Clément Fromonteil</li>
+                <li>Silver, Brown Medium: Clément Fromonteil</li>
+                <li>Silver, Brown Light Heavy: Sören Schlißke</li>
+                <li>Silver, Novice Medium: Elizabeth Engel</li>
+            </div>
+            <li><a href="https://smoothcomp.com/en/event/13415" target="_blank">2024 National Collegiate Championships</a> - April 6, 2024</li>
+            <p>Results:</p>
+            <div class="results">
+                <li>Gold, College Novice Under 73kg: Elizabeth Engel</li>
+                <li>Bronze, College Novice Under 63kg: Yi Liu</li>
+                <li>Bronze, College Novice Under 81kg: Haazem Turaani</li>
+            </div>
+        </div>
+        <button type="button" class="collapsible" id="upcoming">Upcoming Events</button>
+        <div class="content upcoming">
+            <li><a href="https://usajudo.smoothcomp.com/en/event/15015" target="_blank">2024 Indiana State Championships</a> - April 17, 2024</li>
+        </div>
     </main>
     <footer>
         <div class="footer">
@@ -53,15 +104,20 @@
             <div class="row">
             <ul>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="suggestions.html">Suggestions</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="https://www.gofundme.com/f/send-the-judo-team-from-uofm-to-the-nationals?utm_campaign=p_cf+share-flow-1&utm_content=undefined&utm_medium=copy_link&utm_source=customer&utm_term=undefined" target="_blank">Donate</a></li>
             </ul>
             </div>
-            
             <div class="row">
-            INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+                Last modified: <span id="demo"></span>
+            </div>
+            <div class="row">
+                © 2024 Judo at Michigan. All rights reserved.
+            </div>
+            <div class="row">
+                Designed By: Chloe Jones
             </div>
             </div>
             <script src="https://kit.fontawesome.com/121eb38f19.js" crossorigin="anonymous"></script>
