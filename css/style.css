@@ -3,7 +3,7 @@
     margin: 14px;
 }
 body {
-    font-family: Impact, monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Impact, monospace, sans-serif;
     color: #263238;
 }
 .skip {
@@ -25,34 +25,29 @@ body {
     color: white;
 }
 
-/* begin hamburger menu css: */
+/* begin hamburger menu: */
 .container {
     max-width: 1050px;
     width: 90%;
     margin: auto;
 }
-
 .navbar {
     width: 100%;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     background-color: #00274C;
 }
-  
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 62px;
 }
-  
 .navbar .pages {
     display: flex;
 }
-  
 .navbar .nav-container li {
     list-style: none;
 }
-  
 .navbar .nav-container a {
     text-decoration: none;
     color: #0e2431;
@@ -60,7 +55,6 @@ body {
     font-size: 1.2rem;
     padding: 0rem;
 }
-  
 .navbar .nav-container a:hover{
     border-style: solid;
     border-radius: 20%;
@@ -68,13 +62,11 @@ body {
     color: white;
     background-color: #00274C;
 }
-  
 .nav-container {
     display: block;
     position: relative;
     height: 60px;
 }
-  
 .nav-container .checkbox {
     position: absolute;
     display: block;
@@ -86,7 +78,6 @@ body {
     opacity: 0;
     cursor: pointer;
 }
-  
 .nav-container .hamburger-lines {
     display: block;
     height: 26px;
@@ -99,7 +90,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-  
 .nav-container .hamburger-lines .line {
     display: block;
     height: 4px;
@@ -107,21 +97,17 @@ body {
     border-radius: 10px;
     background: #FFCB05;
 }
-  
 .nav-container .hamburger-lines .line1 {
     transform-origin: 0% 0%;
     transition: transform 0.4s ease-in-out;
 }
-  
 .nav-container .hamburger-lines .line2 {
     transition: transform 0.2s ease-in-out;
 }
-  
 .nav-container .hamburger-lines .line3 {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
 }
-  
 .navbar .pages {
     padding-top: 120px;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
@@ -135,13 +121,11 @@ body {
     transition: transform 0.5s ease-in-out;
     text-align: center;
 }
-  
 .navbar .pages li {
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
 }
-  
 .logo {
     position: absolute;
     top: 20px;
@@ -155,120 +139,105 @@ body {
     right: 250px;
     top: 5px;
 }
-  
 .nav-container input[type="checkbox"]:checked ~ .pages {
     transform: translateX(0);
 }
-  
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
 }
-  
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
 }
-  
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
 }
-  
 .nav-container input[type="checkbox"]:checked ~ .logo{
     display: none;
 }
+/* end hamburger menu */
 
-/* end hamburger menu css */
-
-/* begin image carousel css */
+/* begin image carousel: */
 * {box-sizing:border-box}
-
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: 10px;
+    max-width: 1000px;
+    position: relative;
+    margin: 10px;
 }
-
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
-
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
-
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
-
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  background: rgba(0, 0, 0, .5)
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .5)
 }
-
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
-
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin-bottom: 50px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 50px;
 }
-
 .active, .dot:hover {
-  background-color: #717171;
+    background-color: #717171;
 }
-
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
 }
-
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
-/* end image carousel css */
+/* end image carousel */
+
+/* make the images uniform: */
 .img-wrap-square {
     aspect-ratio: 2/1;
 }
@@ -277,12 +246,12 @@ img {
     object-fit: cover;
 }
 
+/* make google map and calendar look better: */
 .google-map {
     padding-bottom: 50%;
     position: relative;
     margin: 50px;
 }
-
 .google-map iframe {
     height: 100%;
     width: 100%;
@@ -290,14 +259,12 @@ img {
     top: 0;
     position: absolute;
 }
-
 .google-cal {
     padding-bottom: 50%;
     position: relative;
     margin: 50px;
     margin-bottom: 75%;
 }
-
 .google-cal iframe {
     height: 100%;
     width: 100%;
@@ -311,6 +278,7 @@ main {
     margin-top: 50px;
 }
 
+/* FAQ: */
 dt:before {
     content: 'Q. ';
 }
@@ -319,17 +287,13 @@ dd:before {
 }
 dt {
     margin-top: 20px;
-    margin-left: 50px;
     position: relative;
-    left: 50px;
     font-size: x-large;
+    font-weight: bold;
 }
 dd {
     margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
     position: relative;
-    left: 50px;
     font-size: large;
 }
 
@@ -340,7 +304,6 @@ dd {
     font-family: 'Josefin Sans','Source Sans Pro', sans-serif;
     text-align:center;
 }
-    
 .footer .row{
     width:100%;
     margin:1% 0%;
@@ -348,13 +311,11 @@ dd {
     color:gray;
     font-size:0.8em;
 }
-    
 .footer .row a{
     text-decoration:none;
     color:#FFCB05;
     transition:0.5s;
-}
-    
+} 
 .footer .row a:hover{
     color:#fff;
     border-style: solid;
@@ -362,25 +323,17 @@ dd {
     border-width: 2px;
     color: white;
 }
-    
 .footer .row ul{
     width:100%;
 }
-    
 .footer .row ul li{
     display:inline-block;
     margin:0px 30px;
-}
-    
+}   
 .footer .row a i{
     font-size:2em;
     margin:0% 1%;
 }
-
-/* loading icon */
-
-
-    
 @media (max-width:720px){
     .footer{
         text-align:left;
@@ -426,47 +379,94 @@ p {
     text-align: left;
     outline: none;
     font-size: 15px;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
     background-color: #ccc;
-  }
-  
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
+}
+/* Style the collapsible content. Note: hidden by default */
+.content {
     padding: 10px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
-  }
-  .content > li{
+}
+.content > li{
     padding: 10px;
-  }
-  li ~ p {
+}
+li ~ p {
     margin-left: 30px;
-  }
-  .results > li {
-    margin-left: 30px;
+}
+.results {
+    margin-left: 40px;
+    list-style-type: square;
+}
+.results > li {
     padding-top: 10px;
-  }
-  .upcoming {
+}
+.upcoming {
     display: block;
-  }
-
-  .collapsible:after {
+}
+.collapsible:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: white;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active2:after {
+}
+.active2:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+}
 /* end collapsible menu */
+#catworks {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+#haazem {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    color: blue;
+}
+.content {
+    list-style-type: none;
+}
+.results {
+    list-style-type: circle;
+}
+.flexpics {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.aboutpic {
+    width: 75%;
+}
+.descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #00274C;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+/* no hamburger menu for tablet/desktop view: */
 @media (min-width:768px) {
     .nav-container .checkbox {
         display: none;
@@ -523,4 +523,27 @@ p {
         margin-left: 50px;
         margin-right: 50px;
     }
+
+    dt {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    dd {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    p {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
 }
+
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+    h1, h2 {
+        color:#FFCB05
+    }
+} */
