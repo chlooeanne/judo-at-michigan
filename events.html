@@ -19,8 +19,7 @@
         <a href = "#main" class="skip">Skip to Main Content</a>
         <nav class="navbar">
             <div class="container nav-container">
-                <input class="checkbox" type="checkbox" name="menu" id="menu" onchange='handleChange(this)'/>
-                <label for="menu">Menu</label>
+                <input class="checkbox" type="checkbox" name="menu" id="menu" onchange='handleChange(this)' aria-label="Menu"/>
                 <div class="hamburger-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
@@ -30,45 +29,45 @@
                 <div class="logo">
                 <h1>Events</h1>
                 </div>
-                <div class="pages">
+                <ul class="pages">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="events.html" id="current">Events</a></li>
                     <li><a href="location.html">Location</a></li>
                     <li><a href="schedule.html">Schedule</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                </div>
+                </ul>
             </div>
         </nav>
     </header>
     <main id="main">
         <button type="button" class="collapsible" id="previous">Previous Events</button>
-        <div class="content">
+        <ul class="content">
             <li>2022 Great Lakes Judo Championship - November 5, 2023</li>
             <p>Results:</p>
-            <div class="results">
+            <ul class="results">
                 <li>Silver: Haazem Turaani </li>
                 <li>Silver </li>
                 <li>Bronze </li>
-            </div>
+            </ul>
             <li>2023 Meijer Winter State Games of Michigan - February 18, 2023</li>
             <p>Results:</p>
-            <div class="results">
+            <ul class="results">
                 <li>Gold: Haazem Turaani</li>
                 <li>Silver </li>
-            </div>
+            </ul>
             <li>2023 Great Lakes Judo Championship - November 4, 2023</li>
             <p>Results:</p>
-            <div class="results">
+            <ul class="results">
                 <li>Gold: Marwan Mikdadi</li>
                 <li>Silver: David Johnson</li>
                 <li>Silver: Andrew Saladino</li>
                 <li>Silver: Elizabeth Engel</li>
                 <li>Bronze: Heath Stidham</li>
                 <li>Bronze: Takamaro Kajino</li>
-            </div>
+            </ul>
             <li>2024 Meijer Winter State Games of Michigan - February 17, 2024</li>
             <p>Results:</p>
-            <div class="results">
+            <ul class="results">
                 <li>Gold, Novice Heavy: Jose Garriga</li>
                 <li>Gold, Novice Light Heavy: Haazem Turaani</li>
                 <li>Gold, Novice Junior Middle: Andrew Saladino</li>
@@ -81,19 +80,19 @@
                 <li>Silver, Novice Feather: Abdulhadi Bin Sifran</li>
                 <li>Bronze, Novice Light: Joonhyuk Ko</li>
                 <li>Bronze, Novice Light Exhibition: Joonhyuk Ko</li>
-            </div>
+            </ul>
             <li>2024 National Collegiate Championships - April 6, 2024</li>
             <p>Results:</p>
-            <div class="results">
+            <ul class="results">
                 <li>Gold, College Novice Under 73kg: Elizabeth Engel</li>
                 <li>Bronze, College Novice Under 63kg: Yi Liu</li>
                 <li>Bronze, College Novice Under 81kg: Haazem Turaani</li>
-            </div>
-        </div>
+            </ul>
+        </ul>
         <button type="button" class="collapsible" id="upcoming">Upcoming Events</button>
-        <div class="content upcoming">
+        <ul class="content upcoming">
             <li><a href="https://usajudo.smoothcomp.com/en/event/15015" target="_blank">2024 Indiana State Championships</a> - April 17, 2024</li>
-        </div>
+        </ul>
     </main>
     <footer>
         <div class="footer">
